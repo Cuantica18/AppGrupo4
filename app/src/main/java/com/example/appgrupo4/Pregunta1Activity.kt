@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appgrupo4.databinding.ActivityPregunta1Binding
 
-
 data class Usuario(
     val usuario: String,
     val password: String
@@ -15,9 +14,7 @@ data class Usuario(
 
 class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
 
-
     private lateinit var binding: ActivityPregunta1Binding
-
 
     private val listaUsuarios = listOf(
         //Astrid Abigail Ismiño Ruíz
@@ -34,7 +31,6 @@ class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
         Usuario("i202503880", "76867949"),
         //Desiderio Vásquez Dejo
         Usuario("i202506964", "71536820")
-
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +38,6 @@ class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
 
         binding = ActivityPregunta1Binding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.btnIngresar.setOnClickListener(this)
     }
@@ -56,25 +51,22 @@ class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun login(usuario: String, password: String) {
-
         if (usuario.isBlank() || password.isBlank()) {
             Toast.makeText(this, "Ingrese usuario y contraseña", Toast.LENGTH_SHORT).show()
             return
         }
 
-
         if (validarCredenciales(usuario, password)) {
-
-            val intent = Intent(this, HomeActivity::class.java)
-
-
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-
+            val intent = Intent(this, HomeActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                putExtra("CODIGO_USUARIO", usuario)
+            }
             startActivity(intent)
             finish()
         } else {
-
             Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+            binding.etPassword.text.clear()
+            binding.etPassword.requestFocus()
         }
     }
 
