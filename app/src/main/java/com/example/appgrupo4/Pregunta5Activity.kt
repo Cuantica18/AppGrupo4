@@ -29,10 +29,10 @@ class Pregunta5Activity : AppCompatActivity(){
 
     fun getAnimales() : List<Animal>{
         return listOf(
-            Animal(1, "Vaca", "https://es.wikipedia.org/wiki/Bos_taurus#/media/Archivo:20100516_Vacas_Vilarromar%C3%ADs,_Oroso-8-1.jpg"),
-            Animal(2, "Mono", "https://es.wikipedia.org/wiki/Ateles#/media/Archivo:Ateles_fusciceps_Colombia.JPG"),
-            Animal(3, "Llama", "https://upload.wikimedia.org/wikipedia/commons/c/c6/Lama_glama_%28Llama%29_white_fur.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"),
-            Animal(4, "Elefante", "https://upload.wikimedia.org/wikipedia/commons/d/dc/Elephant_near_ndutu.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"),
+            Animal( 1, "Vaca", "https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" ),
+            Animal( 2, "Mono", "https://upload.wikimedia.org/wikipedia/commons/7/70/Capuchin_Costa_Rica.jpg" ),
+            Animal( 3, "Llama", "https://upload.wikimedia.org/wikipedia/commons/0/0c/Llama_Alpaca.jpg" ),
+            Animal( 4, "Elefante", "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" ),
             Animal(5, "Leon", "https://es.wikipedia.org/wiki/Panthera_leo#/media/Archivo:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"),
             Animal(6, "Tigre", "https://upload.wikimedia.org/wikipedia/commons/5/54/Tigress_at_Jim_Corbett_National_Park.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"),
             Animal(7, "Zebra", "https://upload.wikimedia.org/wikipedia/commons/f/f2/Beautiful_Zebra_in_South_Africa.JPG?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"),
