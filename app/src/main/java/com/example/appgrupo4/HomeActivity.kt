@@ -3,6 +3,7 @@ package com.example.appgrupo4
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appgrupo4.databinding.ActivityHomeBinding
+import android.content.Intent
 
 class HomeActivity : AppCompatActivity() {
 
@@ -18,9 +19,21 @@ class HomeActivity : AppCompatActivity() {
 
             when (item.itemId) {
 
+                R.id.nav_pregunta1 -> {
+                    startActivity(Intent(this, Pregunta1Activity::class.java))
+                    true
+                }
+
                 R.id.nav_pregunta2 -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, Pregunta2Fragment())
+                        .commit()
+                    true
+                }
+
+                R.id.nav_pregunta4 -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Pregunta4Fragment())
                         .commit()
                     true
                 }
