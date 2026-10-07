@@ -31,7 +31,7 @@ class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
         //Jhojan Enriquez Villafranca
         Usuario("i202504171", "60781417"),
         //Carlos Zair Guadalupe Veis
-        Usuario("i202503880", "68194257"),
+        Usuario("i202503880", "76867949"),
         //Desiderio Vásquez Dejo
         Usuario("i202506964", "71536820")
 
