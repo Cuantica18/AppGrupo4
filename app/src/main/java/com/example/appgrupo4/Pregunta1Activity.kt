@@ -30,7 +30,7 @@ class Pregunta1Activity : AppCompatActivity(), View.OnClickListener {
         //Carlos Zair Guadalupe Veis
         Usuario("i202503880", "76867949"),
         //Desiderio Vásquez Dejo
-        Usuario("abc", "123")
+        Usuario("i202506964", "71536820")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
