@@ -6,6 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 // Modelos de datosdata class ProductResponse(val products: List<Product>)
+data class ProductResponse(val products: List<Product>)
 
 data class Product(
     val id: Int,
