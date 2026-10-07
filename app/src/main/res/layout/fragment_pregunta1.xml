@@ -10,6 +10,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:text="Control de peso en cabina"
         android:textAlignment="center"
         android:textSize="20sp"
