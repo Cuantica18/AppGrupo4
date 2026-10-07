@@ -31,6 +31,11 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
 
+                R.id.nav_pregunta3 -> {
+                    startActivity(Intent(this, Pregunta3Activity::class.java))
+                    true
+                }
+
                 R.id.nav_pregunta4 -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, Pregunta4Fragment())
